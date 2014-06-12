@@ -11,8 +11,8 @@ Supports:
 
 ## Prerequisite
 
-[Alfred](http://alfredapp.com)
-[Chrome-cli](https://github.com/prasmussen/chrome-cli)
+- [Alfred](http://alfredapp.com)
+- [Chrome-cli](https://github.com/prasmussen/chrome-cli)
 
 ## Usage
 
