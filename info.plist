@@ -93,11 +93,11 @@
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>98</integer>
+				<integer>105</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F7</string>
+				<string>F13</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -181,11 +181,11 @@ play</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>100</integer>
+				<integer>107</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F8</string>
+				<string>F14</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -226,11 +226,11 @@ next</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>101</integer>
+				<integer>113</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F9</string>
+				<string>F15</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -247,7 +247,7 @@ next</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Dependency: chrome-cli</string>
 	<key>uidata</key>
 	<dict>
 		<key>1C910833-D1FA-4BD5-B721-C53EE2C43A1B</key>
