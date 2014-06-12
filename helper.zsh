@@ -31,9 +31,10 @@ get_title() {
 
 get_status() {
 	title=`get_title_with_status`
-	if [[ $title[0,1] == "▶" ]]; then
+	if [[ "$title[1,1]" == "▶" ]]; then
 		echo "paused"
 	else
+		# empty string also falls here
 		echo "playing"
 	fi
 }
@@ -50,7 +51,11 @@ get_song_info() {
 play() {
 	tab=`get_tab`
 	execute "$play_cmd" "$tab"
-	get_song_info
+	cmd='(function (){return document.querySelector(".ply").classList.contains("js-pause");})()'
+	stat=`execute $cmd $tab`
+	if [[ $stat == "0" ]]; then
+		get_song_info
+	fi
 }
 
 prev() {
