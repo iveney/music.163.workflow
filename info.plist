@@ -274,7 +274,7 @@ next</string>
 				<integer>127</integer>
 				<key>script</key>
 				<string>source helper.zsh
-get_title</string>
+get_song_info</string>
 				<key>type</key>
 				<integer>5</integer>
 			</dict>
