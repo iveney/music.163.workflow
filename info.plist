@@ -19,6 +19,28 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>24D07A78-94E8-4E0D-A34D-64C187AFE886</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2587770B-60E7-4171-AD42-9F78762F8818</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>2587770B-60E7-4171-AD42-9F78762F8818</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8698553F-60EF-481D-8C83-EE13CDB7AA2C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>294A52DC-6FB9-4549-8665-D58FDE0223F3</key>
 		<array>
 			<dict>
@@ -245,6 +267,51 @@ next</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>source helper.zsh
+get_title</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2587770B-60E7-4171-AD42-9F78762F8818</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>106</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F16</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>24D07A78-94E8-4E0D-A34D-64C187AFE886</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Dependency: chrome-cli</string>
@@ -254,6 +321,16 @@ next</string>
 		<dict>
 			<key>ypos</key>
 			<real>300</real>
+		</dict>
+		<key>24D07A78-94E8-4E0D-A34D-64C187AFE886</key>
+		<dict>
+			<key>ypos</key>
+			<real>420</real>
+		</dict>
+		<key>2587770B-60E7-4171-AD42-9F78762F8818</key>
+		<dict>
+			<key>ypos</key>
+			<real>420</real>
 		</dict>
 		<key>294A52DC-6FB9-4549-8665-D58FDE0223F3</key>
 		<dict>

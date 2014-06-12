@@ -1,3 +1,20 @@
+play_cmd='(function (){document.querySelector(".ply").click();})()'
+prev_cmd='(function (){document.querySelector(".prv").click();})()'
+next_cmd='(function (){document.querySelector(".nxt").click();})()'
+get_title_cmd='(function (){return document.querySelector("a.fc1").text;})()'
+get_artist_cmd='(function (){return document.querySelector("span.by").firstChild.title;})()'
+
+# $1: command $2: tab id
+execute() {
+	cmd=$1
+	tab=$2
+	if [[ -n "$tab" ]]; then
+		chrome-cli execute "$cmd" -t "$tab"
+		return 0
+	fi
+	return 1
+}
+
 get_tab() {
 	echo `chrome-cli list links | grep music.163.com | awk -F'[:\\\[\\\] ]' '{print $3}'`
 }
@@ -21,32 +38,31 @@ get_status() {
 	fi
 }
 
-play_cmd='(function (){document.querySelector(".ply").click();})()'
-prev_cmd='(function (){document.querySelector(".prv").click();})()'
-next_cmd='(function (){document.querySelector(".nxt").click();})()'
+get_song_info() {
+	tab=`get_tab`
+	title=`execute $get_title_cmd $tab`
+	artist=`execute $get_artist_cmd $tab`
+	if [[ -n "$title" ]]; then
+		echo "$title - $artist"
+	fi
+}
 
 play() {
 	tab=`get_tab`
-	if [[ -n "$tab" ]]; then
-		chrome-cli execute "$play_cmd" -t $tab
-		echo `get_title`
-	fi
+	execute "$play_cmd" "$tab"
+	get_song_info
 }
 
 prev() {
 	tab=`get_tab`
-	if [[ -n "$tab" ]]; then
-		chrome-cli execute "$prev_cmd" -t $tab
-		sleep 1
-		echo `get_title`
-	fi
+	execute "$prev_cmd" "$tab"
+	sleep 1
+	get_song_info
 }
 
 next() {
 	tab=`get_tab`
-	if [[ -n "$tab" ]]; then
-		chrome-cli execute "$next_cmd" -t $tab
-		sleep 1
-		echo `get_title`
-	fi
+	execute "$next_cmd" "$tab"
+	sleep 1
+	get_song_info
 }
