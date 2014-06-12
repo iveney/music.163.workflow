@@ -7,6 +7,8 @@ Supports:
 - Previous
 - Display song info
 
+[Download](http://cl.ly/W2ph)
+
 ## Prerequisite
 
 [Alfred](http://alfredapp.com)
