@@ -1,5 +1,7 @@
 # Alfred workflow for http://music.163.com in Chrome
 
+![](song.png?raw=true)
+
 Supports:
 
 - Play/pause
