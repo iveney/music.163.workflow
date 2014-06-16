@@ -3,6 +3,8 @@ prev_cmd='(function (){document.querySelector(".prv").click();})()'
 next_cmd='(function (){document.querySelector(".nxt").click();})()'
 get_title_cmd='(function (){return document.querySelector("a.fc1").text;})()'
 get_artist_cmd='(function (){return document.querySelector("span.by").firstChild.title;})()'
+open_fav_cmd='(function (){document.querySelector("a.icn-add").click();})()'
+add_fav_cmd='(function (){document.querySelector("#g_iframe").contentDocument.querySelector(".zcnt .s-fc0").click();})()'
 
 # $1: command $2: tab id
 execute() {
@@ -46,6 +48,13 @@ get_song_info() {
 	if [[ -n "$title" ]]; then
 		echo "$title - $artist"
 	fi
+}
+
+add_fav() {
+	tab=`get_tab`
+	execute "$open_fav_cmd" "$tab"
+	execute "$add_fav_cmd" "$tab"
+	get_song_info
 }
 
 play() {

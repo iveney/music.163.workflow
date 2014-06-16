@@ -8,6 +8,17 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>10DCA2A7-6B6A-4BB3-B1EC-58F51B46D3FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69101A23-9DB0-4FCE-BF58-F8A359D0C324</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>1C910833-D1FA-4BD5-B721-C53EE2C43A1B</key>
 		<array>
 			<dict>
@@ -52,6 +63,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>35074AA2-2F77-4826-A89F-02E200EDAA6E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B2261162-5FDF-472B-808B-1B75177F574A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>69101A23-9DB0-4FCE-BF58-F8A359D0C324</key>
 		<array>
 			<dict>
@@ -79,6 +101,17 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C4848121-85CA-41EE-8668-8FA5A91C3B56</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B2261162-5FDF-472B-808B-1B75177F574A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>311BAE84-A505-4786-821F-1CC9DA708357</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -155,6 +188,33 @@ prev</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>107</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F14</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>294A52DC-6FB9-4549-8665-D58FDE0223F3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -169,6 +229,33 @@ play</string>
 			<string>69101A23-9DB0-4FCE-BF58-F8A359D0C324</string>
 			<key>version</key>
 			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>100</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F8</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>10DCA2A7-6B6A-4BB3-B1EC-58F51B46D3FE</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -194,33 +281,6 @@ play</string>
 			<string>8698553F-60EF-481D-8C83-EE13CDB7AA2C</string>
 			<key>version</key>
 			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>107</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F14</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>294A52DC-6FB9-4549-8665-D58FDE0223F3</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -270,24 +330,6 @@ next</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>source helper.zsh
-get_song_info</string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2587770B-60E7-4171-AD42-9F78762F8818</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -312,11 +354,106 @@ get_song_info</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>source helper.zsh
+get_song_info</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2587770B-60E7-4171-AD42-9F78762F8818</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>source helper.zsh
+add_fav</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B2261162-5FDF-472B-808B-1B75177F574A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>♥️</string>
+				<key>hotkey</key>
+				<integer>64</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F17</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>35074AA2-2F77-4826-A89F-02E200EDAA6E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>♥️ {query}</string>
+				<key>title</key>
+				<string>网易云音乐</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>311BAE84-A505-4786-821F-1CC9DA708357</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Dependency: chrome-cli</string>
 	<key>uidata</key>
 	<dict>
+		<key>10DCA2A7-6B6A-4BB3-B1EC-58F51B46D3FE</key>
+		<dict>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
 		<key>1C910833-D1FA-4BD5-B721-C53EE2C43A1B</key>
 		<dict>
 			<key>ypos</key>
@@ -335,12 +472,22 @@ get_song_info</string>
 		<key>294A52DC-6FB9-4549-8665-D58FDE0223F3</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>120</real>
+		</dict>
+		<key>311BAE84-A505-4786-821F-1CC9DA708357</key>
+		<dict>
+			<key>ypos</key>
+			<real>570</real>
+		</dict>
+		<key>35074AA2-2F77-4826-A89F-02E200EDAA6E</key>
+		<dict>
+			<key>ypos</key>
+			<real>570</real>
 		</dict>
 		<key>69101A23-9DB0-4FCE-BF58-F8A359D0C324</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>150</real>
 		</dict>
 		<key>69760FC5-C1FA-4F8A-99DE-6C27B33CFF03</key>
 		<dict>
@@ -350,17 +497,22 @@ get_song_info</string>
 		<key>7996069D-8CE3-4ABF-82B2-CB624C86FB37</key>
 		<dict>
 			<key>ypos</key>
-			<real>50</real>
+			<real>10</real>
 		</dict>
 		<key>8698553F-60EF-481D-8C83-EE13CDB7AA2C</key>
 		<dict>
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
+		<key>B2261162-5FDF-472B-808B-1B75177F574A</key>
+		<dict>
+			<key>ypos</key>
+			<real>570</real>
+		</dict>
 		<key>C4848121-85CA-41EE-8668-8FA5A91C3B56</key>
 		<dict>
 			<key>ypos</key>
-			<real>50</real>
+			<real>10</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
