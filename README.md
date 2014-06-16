@@ -9,7 +9,7 @@ Supports:
 - Previous
 - Display song info
 
-[Download](http://cl.ly/W2ph)
+[Download](http://cl.ly/W5br)
 
 ## Prerequisite
 
