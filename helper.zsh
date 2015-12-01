@@ -31,14 +31,14 @@ set_tab() {
 }
 
 wait_tab() {
-        while [[ ! -n "$tab" ]] || [[ `get_state` != "complete" ]]; do 
+        while [[ ! -n "$tab" ]] || [[ `get_state` != "complete" ]]; do
 		set_tab
 		if [[ ! -n "$tab" ]]; then
-			echo 'tab not found, create new'
-			chrome-cli open http://music.163.com/
+			>&2 echo 'tab not found, create new'
+			chrome-cli open http://music.163.com/ > /dev/null
 			sleep 1
 		else
-			echo 'wait for tab ready'
+			>&2 echo 'wait for tab ready'
 			sleep 1
 		fi
 	done
