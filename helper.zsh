@@ -1,3 +1,5 @@
+export PATH=$PATH:/usr/local/bin
+
 play_cmd='(function (){document.querySelector(".ply").click();})()'
 prev_cmd='(function (){document.querySelector(".prv").click();})()'
 next_cmd='(function (){document.querySelector(".nxt").click();})()'
@@ -18,7 +20,7 @@ execute() {
 }
 
 get_tab() {
-	echo `chrome-cli list links | grep music.163.com | awk -F'[:\\\[\\\] ]' '{print $3}'`
+	echo `chrome-cli list links | grep music.163.com | awk -F'[:\\\[\\\] ]' '{print $2}'`
 }
 
 get_title_with_status() {
