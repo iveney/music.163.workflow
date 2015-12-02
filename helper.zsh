@@ -27,7 +27,7 @@ get_state() {
 }
 
 set_tab() {
-	tab=`chrome-cli list links | grep music.163.com | awk -F'[:\\\[\\\] ]' '{print $2}'`
+	tab=`chrome-cli list links | grep music.163.com | python -c "import re,sys;sys.stdout.write(re.findall(r'\[([0-9:]+)\]',sys.stdin.read())[0].split(':')[-1])"`
 }
 
 wait_tab() {
